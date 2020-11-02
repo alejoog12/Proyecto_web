@@ -1,0 +1,501 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/******************************
+
+COLOR PALETTE
+
+
+
+
+[Table of Contents]
+
+1. Fonts
+2. Body and some general stuff
+3. Header
+	3.1 Logo
+	3.2 Main Nav
+	3.3 Header Side
+	3.4 Hamburger
+4. Menu
+	4.1 Menu Social
+	4.2 Menu copyright
+5. Home
+7. Page Section
+8. Buttons
+9. Teachers
+10. Milestones
+11. Become
+12. Footer
+	12.1 Newsletter
+	12.2 Footer Content
+	12.3 Footer Copyright
+
+
+******************************/
+
+
+/*********************************
+8. Buttons
+*********************************/
+
+.button {
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button a {
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.button_1 {
+    width: 202px;
+    height: 48px;
+}
+
+
+/*********************************
+9. Teachers
+*********************************/
+
+.teachers .row .teacher {
+    margin: auto;
+}
+
+.maestros_section {
+    margin-top: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.testimonials {
+    width: 100%;
+    background: #1a1a1a;
+}
+
+.testimonials_background_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.maestros_texto {
+    display: flex;
+    margin: auto;
+    width: 70%;
+    opacity: 1;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.maestros_texto:hover {
+    opacity: 0;
+}
+
+.testimonials_background {
+    background-image: url(../images/Maestros_Colegio.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    opacity: 0.34;
+}
+
+.testimonials .section_title h1 {
+    color: #FFFFFF;
+}
+
+.testimonial_title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-top: 6px;
+}
+
+.teacher {
+    margin-bottom: 82px;
+}
+
+.teachers {
+    padding: 0%;
+}
+
+.teacher:nth-last-child(-n+3) {
+    margin-bottom: 0px;
+}
+
+.card {
+    display: block;
+    border: none;
+    background: #f0f0f0;
+}
+
+.card:hover .card_plus {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -moz-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    -o-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.card_img {
+    background: #1a1a1a;
+}
+
+.card-img-top {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.card_plus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+    -moz-transform: translate(-50%, -50%) scale(0.5);
+    -ms-transform: translate(-50%, -50%) scale(0.5);
+    -o-transform: translate(-50%, -50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(0.5);
+    width: 75px;
+    height: 75px;
+    background: #ffb606;
+    z-index: 10;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card_plus a {
+    display: block;
+    font-size: 24px;
+    line-height: 75px;
+    color: #FFFFFF;
+}
+
+.card-body {
+    padding-top: 0px;
+    padding-bottom: 58px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-title {
+    margin-top: 55px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #1a1a1a;
+    line-height: 1.2;
+}
+
+.card-title a:hover {
+    color: #a5a5a5;
+}
+
+.card-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #a5a5a5;
+    margin-top: -7px;
+}
+
+.teacher_social {
+    margin-top: 34px;
+}
+
+.fila-final {
+    margin-top: 80px;
+}
+
+
+/*********************************
+10. Milestones
+*********************************/
+
+.milestones {
+    width: 100%;
+    padding-top: 118px;
+    padding-bottom: 107px;
+}
+
+.milestones_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.milestone {
+    width: 100%;
+}
+
+.milestone_icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+}
+
+.milestone_icon img {
+    width: 100%;
+}
+
+.milestone_counter {
+    font-size: 36px;
+    font-weight: 500;
+    color: #ffb606;
+    line-height: 1;
+    margin-top: 41px;
+}
+
+.milestone_text {
+    font-size: 22px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-top: 3px;
+}
+
+
+/*********************************
+11. Become
+*********************************/
+
+.become {
+    width: 100%;
+    padding-top: 117px;
+    padding-bottom: 117px;
+}
+
+.become_title h1 {
+    display: block;
+    color: #1a1a1a;
+    font-weight: 500;
+    padding-top: 24px;
+}
+
+.become_title h1::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 4px;
+    content: '';
+    background: #ffb606;
+}
+
+.become_text {
+    font-weight: 500;
+    color: #a5a5a1;
+    margin-top: 48px;
+    margin-bottom: 0px;
+}
+
+.become_button {
+    width: 188px;
+    height: 53px;
+    background: #ffb606;
+    margin-top: 37px;
+}
+
+.become_button a {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 53px;
+}
+
+.become_button:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.become_image {
+    margin-top: 48px;
+    width: 100%;
+    height: calc(100% - 48px);
+    display: flex;
+    align-items: center;
+}
+
+.become_image img {
+    width: 100%;
+}
+
+
+/*********************************
+12. Footer
+*********************************/
+
+.footer {
+    width: 100%;
+    padding-top: 86px;
+    background: #1a1a1a;
+}
+
+.footer .section_title h1 {
+    color: #FFFFFF;
+}
+
+.teachers .container>.section_title {
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.teachers .container>.section_title h1 {
+    font-size: 30pt;
+}
+
+.teachers .container>.section_title h2 {
+    font-size: 25pt;
+}
+
+.teachers .container>.section_title-corto {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+/*********************************
+12.1 Newsletter
+*********************************/
+
+.newsletter {
+    border-bottom: solid 2px #4d4e4e;
+}
+
+
+/*********************************
+12.2 Footer Content
+*********************************/
+
+.footer_content {
+    padding-top: 80px;
+    padding-bottom: 83px;
+    border-bottom: solid 2px #4d4e4e;
+}
+
+.footer_content .logo_container {
+    padding-left: 0px;
+}
+
+.footer_content .logo span {
+    color: #FFFFFF;
+}
+
+.footer_about_text {
+    margin-top: 24px;
+    margin-bottom: 0px;
+    padding-right: 20px;
+}
+
+.footer_column_title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding-top: 15px;
+}
+
+.footer_column_content {
+    margin-top: 32px;
+}
+
+.footer_list_item {
+    margin-bottom: 11px;
+}
+
+.footer_list_item a {
+    font-size: 14px;
+    color: #a5a5a5;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.footer_list_item a:hover {
+    color: #ffb606;
+}
+
+.footer_contact_item {
+    font-size: 14px;
+    font-weight: 400;
+    color: #a5a5a5;
+    margin-bottom: 22px;
+}
+
+.footer_contact_item:last-child {
+    margin-bottom: 0px;
+}
+
+.footer_contact_icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.footer_contact_icon img {
+    width: 100%;
+}
+
+
+/*********************************
+12.3 Footer Copyright
+*********************************/
+
+.footer_bar {
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.footer_social .menu_social_item a i {
+    color: #FFFFFF;
+}
+
+.footer_social .menu_social_item a i:hover {
+    color: #ffb606;
+}
+
+.footer_social .menu_social_item:last-child {
+    margin-right: 0px;
+}
+
+
+/* estilos de botón para regresar arriba */
+
+.simplescrollup__button {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    transition: 1s all;
+    z-index: 10000;
+}
+
+.simplescrollup__button--show {
+    transform: translateX(0);
+}
+
+.simplescrollup__button--hide {
+    transform: translateX(100px);
+}

@@ -1,0 +1,592 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/******************************
+
+COLOR PALETTE
+
+
+
+
+[Table of Contents]
+
+1. Fonts
+2. Body and some general stuff
+3. Header
+	3.1 Logo
+	3.2 Main Nav
+	3.3 Header Side
+	3.4 Hamburger
+4. Menu
+	4.1 Menu Social
+	4.2 Menu copyright
+5. Home
+7. Page Section
+8. Buttons
+9. Popular
+10. Footer
+	10.1 Newsletter
+	10.2 Footer Content
+	10.3 Footer Copyright
+
+
+******************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+/*********************************
+slider
+*********************************/
+
+.imagenes-historia {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.imagenes-historia .carousel-inner {
+    width: 100%;
+}
+
+.imagenes-historia .carousel-item {
+    width: 100%;
+}
+
+.imagenes-historia .carousel-item img {
+    width: 100%;
+}
+
+.seccion-historia {
+    background-color: #1a1a1a;
+    margin: auto;
+}
+
+.seccion-historia .row {
+    width: 100%;
+    margin: auto;
+}
+
+.diapositiva .row {
+    width: 100%;
+    margin: auto;
+}
+
+.seccion-historia .contenido-titulo {
+    padding: 70px;
+    padding-left: 30px;
+    color: #ffffff;
+}
+
+.seccion-historia .contenido-texto {
+    padding: 30px;
+    padding-top: 0;
+}
+
+.seccion-historia .contenido-texto p {
+    color: #ffffff;
+    text-align: justify;
+}
+
+.seccion-historia .contenido-titulo h1 {
+    font-size: 40pt;
+}
+
+.diapositiva {
+    background-color: rgba(26, 26, 26, 0.576);
+    margin: auto;
+    height: 100%;
+}
+
+.fondo-diapositiva {
+    background-size: 100%;
+    background-position-y: bottom;
+    background-size: cover;
+}
+
+.info_principal .col-sm-6 {
+    padding: 0;
+    margin: 0;
+}
+
+.quienes_somos {
+    text-align: center;
+    color: #ffffff;
+    padding: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0;
+}
+
+.quienes_somos-img img {
+    padding-top: 20px;
+    display: flex;
+}
+
+.quienes_somos-titulo {
+    background-color: #b80000;
+}
+
+.quienes_somos-titulo h1 {
+    text-align: center;
+    font-size: 37pt;
+    color: #ffffff;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-top: 6px solid #ffb606;
+    margin-bottom: 0;
+    border-bottom: 6px solid #ffb606;
+}
+.home_content {
+    padding-bottom: 5px;
+}
+
+/*********************************
+
+*********************************/
+
+.quienes_somos p {
+    text-align: justify;
+    color: #ffffff;
+}
+
+.fundador {
+    display: flex;
+    border: 3px solid #ffb606;
+    width: 75%;
+    margin: auto;
+}
+
+.caja-img-fundador {
+    float: left;
+    width: 40%;
+    margin-top: 0.5em;
+}
+
+.caja-img-fundador p.cita {
+    font-style: italic;
+    font-size: 8pt;
+    text-align: center;
+    margin: 0;
+    margin-top: 12px;
+}
+
+
+/*********************************
+10. Sección Perfil
+*********************************/
+
+.seccion-perfil .row {
+    width: 100%;
+    margin: auto;
+}
+
+.seccion-perfil .contenido-texto {
+    padding: 30px;
+}
+.seccion-perfil .contenido-titulo {
+    padding-top: 15px;
+}
+
+.seccion-perfil h1 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.seccion-perfil p {
+    color: #FFFFFF;
+    text-align: justify;
+}
+.imagen-vicentino {
+    height: 100%;
+}
+
+
+/*********************************
+10. Register
+*********************************/
+
+.register {
+    width: 100%;
+}
+
+.register_section {
+    width: 100%;
+    background: #4ba700;
+    padding-top: 156px;
+    padding-bottom: 161px;
+}
+
+.register_section1 {
+    width: 100%;
+    background: #b80000;
+    padding-top: 156px;
+    padding-bottom: 161px;
+}
+
+.register_content {
+    width: 522px;
+}
+
+.register_title {
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    line-height: 1.63;
+}
+
+.register_title:last-child {
+    margin-bottom: 0px;
+}
+
+.register_title span {
+    color: #1a1a1a;
+}
+
+.register_text {
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-top: 32px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 0px;
+}
+
+.register_button {
+    width: 202px;
+    height: 48px;
+    background-color: #ffb606;
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 65px;
+    color: #FFFFFF;
+}
+
+.register_button a {
+    color: #FFFFFF;
+}
+
+.page_section {
+    padding-top: 0px;
+    padding-bottom: 100px;
+}
+
+.container-section {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+.container-section img {
+    width: 100%;
+}
+
+.contenedor-alumnos {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container-section .section_text h1 {
+    color: #1a1a1a;
+    margin-bottom: 5%;
+}
+
+.container-section .contenido-titulo {
+    margin: auto;
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    background-color: #ffb606;
+    color: #ffffff;
+}
+
+.container-section .contenido-titulo h1 {
+    margin: auto;
+}
+
+
+/*********************************
+8. Buttons
+*********************************/
+
+.button {
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button a {
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.button_1 {
+    width: 202px;
+    height: 48px;
+}
+
+
+/*********************************
+9. Popular
+*********************************/
+
+.imagen-quienes {}
+
+.acerca {
+    border-top: 10px solid #1a1a1a;
+    padding: 0%;
+}
+
+.course_boxes {
+    margin-top: 68px;
+}
+
+.course_box {
+    margin-bottom: 108px;
+}
+
+.course_box:nth-last-child(-n+3) {
+    margin-bottom: 0px;
+}
+
+.card {
+    display: block;
+    background: #f8f9fb;
+    border: none;
+}
+
+.card-img-top {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.card-body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-title {
+    margin-top: 55px;
+}
+
+.card-title a {
+    font-size: 22px;
+    font-weight: 500;
+    color: #1a1a1a;
+    line-height: 1.2;
+}
+
+.card-title a:hover {
+    color: #a5a5a5;
+}
+
+.card-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #a5a5a5;
+    margin-top: -12px;
+}
+
+.price_box {
+    width: 100%;
+    height: 67px;
+    background: #eaebec;
+    margin-top: 41px;
+    padding-left: 35px;
+}
+
+.course_author_image {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.course_author_name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a1a1a;
+    padding-left: 20px;
+    margin-top: 7px;
+}
+
+.course_author_name span {
+    color: #a5a5a5;
+}
+
+.course_price {
+    width: 67px;
+    height: 67px;
+    background: #ffb606;
+    margin-left: auto;
+}
+
+.course_price span {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+
+/*********************************
+10. Footer
+*********************************/
+
+.footer {
+    width: 100%;
+    padding-top: 86px;
+    background: #1a1a1a;
+}
+
+.footer .section_title h1 {
+    color: #FFFFFF;
+}
+
+
+/*********************************
+ Footer borde
+*********************************/
+
+.newsletter-normal {
+    border-bottom: solid 2px #4d4e4e;
+}
+
+
+/*********************************
+10.2 Footer Content
+*********************************/
+
+.footer_content {
+    padding-top: 80px;
+    padding-bottom: 83px;
+    border-bottom: solid 2px #4d4e4e;
+}
+
+.footer_content .logo_container {
+    padding-left: 0px;
+}
+
+.footer_content .logo span {
+    color: #FFFFFF;
+}
+
+.footer_about_text {
+    margin-top: 24px;
+    margin-bottom: 0px;
+    padding-right: 20px;
+}
+
+.footer_column_title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding-top: 15px;
+}
+
+.footer_column_content {
+    margin-top: 32px;
+}
+
+.footer_list_item {
+    margin-bottom: 11px;
+}
+
+.footer_list_item a {
+    font-size: 14px;
+    color: #a5a5a5;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.footer_list_item a:hover {
+    color: #ffb606;
+}
+
+.footer_contact_item {
+    font-size: 14px;
+    font-weight: 400;
+    color: #a5a5a5;
+    margin-bottom: 22px;
+}
+
+.footer_contact_item:last-child {
+    margin-bottom: 0px;
+}
+
+.footer_contact_icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.footer_contact_icon img {
+    width: 100%;
+}
+
+
+/*********************************
+10.3 Footer Copyright
+*********************************/
+
+.footer_bar {
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.footer_social .menu_social_item a i {
+    color: #FFFFFF;
+}
+
+.footer_social .menu_social_item a i:hover {
+    color: #ffb606;
+}
+
+.footer_social .menu_social_item:last-child {
+    margin-right: 0px;
+}
+
+
+/* estilos de botón para regresar arriba */
+
+.simplescrollup__button {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    transition: 1s all;
+    z-index: 10000;
+}
+
+.simplescrollup__button--show {
+    transform: translateX(0);
+}
+
+.simplescrollup__button--hide {
+    transform: translateX(100px);
+}
+
+
+/*********************************
+Elementos que solo se muestra en responsive
+*********************************/
+
+.mostrar-responsive {
+    display: none;
+}

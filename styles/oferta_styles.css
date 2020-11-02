@@ -1,0 +1,930 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/******************************
+
+COLOR PALETTE
+
+
+
+
+[Table of Contents]
+
+1. Fonts
+2. Body and some general stuff
+3. Header
+	3.1 Logo
+	3.2 Main Nav
+	3.3 Header Side
+	3.4 Hamburger
+4. Menu
+	4.1 Menu Social
+	4.2 Menu copyright
+5. Home
+7. Page Section
+8. Buttons
+9. Popular
+10. Footer
+	10.1 Newsletter
+	10.2 Footer Content
+	10.3 Footer Copyright
+
+
+******************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+/*********************************
+Area bilingue
+*********************************/
+
+.oferta-academica .row {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+    margin: auto;
+}
+
+.slider-bil {
+    background-color: #1a1a1a;
+    border-top: 20px solid #1a1a1a;
+    border-bottom: 20px solid #1a1a1a;
+}
+
+.area-bilingue {
+    background-color: #b80000;
+    margin: auto;
+    width: 100%;
+}
+
+.area-bilingue img {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.area-bilingue .texto-bilingue,
+.area-bilingue .titulo-bilingue {
+    padding: 30px;
+}
+
+.area-bilingue p,
+.area-bilingue h1 {
+    color: white;
+}
+
+.area-bilingue p {
+    padding-right: 0;
+}
+
+.area-bilingue h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.cita {
+    text-align: right;
+    color: #ffffff;
+    font-style: italic;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.texto-bilingue {
+    text-align: justify;
+    padding-right: 0;
+}
+
+.logo-bil {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 23px;
+}
+
+.slider {
+    padding: 30px;
+}
+
+
+/*********************************
+8.3 Accordions
+*********************************/
+
+.titulo-bachiller {
+    background-color: #b80000;
+    padding: 60px;
+}
+
+.titulo-bachiller h1 {
+    font-size: 34pt;
+    color: #ffffff;
+    text-align: center;
+}
+
+.Nota-inversion {
+    margin: 50px;
+    border: 2px solid #ffb606;
+    padding: 12px;
+}
+
+.Nota-inversion p {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+.fa-arrow-alt-circle-right {
+    color: #ffb606;
+}
+
+.Oferta-educativa {
+    margin: 0;
+    width: 100%;
+}
+
+.oferta {
+    padding: 5%;
+    padding-bottom: 0;
+}
+
+.oferta p {
+    text-align: justify;
+    font-weight: 500;
+    color: #343535;
+}
+
+.contenedor-Oferta {
+    padding: 18px;
+}
+
+.oferta_item {
+    font-size: 16px;
+    color: #4d4e4e;
+    margin-bottom: 22px;
+    font-weight: bold;
+}
+
+.oferta_item:last-child {
+    margin-bottom: 0px;
+}
+
+.oferta_item a {
+    font-style: normal;
+    color: #868686;
+}
+
+.oferta_item a:hover {
+    text-decoration: underline;
+}
+
+.oferta p {
+    color: #868686;
+}
+
+.ajustep {
+    color: #868686;
+    margin-bottom: 32px;
+}
+
+.oferta h1 {
+    color: #1a1a1a;
+    text-align: center;
+    margin: 50px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+.elements_accordions {
+    margin-top: 0;
+}
+
+.accordion_container {
+    margin: 50px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.accordion {
+    margin: 0;
+    height: 60px;
+    width: auto;
+    color: #ffffff;
+    background: #f8f4f4;
+    font-size: 15pt;
+    padding-left: 30px;
+    cursor: pointer;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.accordion.active {
+    background: #ffb606;
+    color: #FFFFFF;
+}
+
+.accordion:active {
+    background: #ffb606 !important;
+    color: #FFFFFF;
+}
+
+.accordion::after {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 62px;
+    height: 100%;
+    content: '+';
+    background: #1a1a1a;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 500;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.accordion.active::after {
+    content: '-';
+}
+
+.accordion:hover {
+    background: #e4e4e4;
+    margin-bottom: 0;
+}
+
+.accordion_panel {
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-height: 0;
+    color: #4d4e4e;
+    overflow: hidden;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.accordion_panel li {
+    margin-top: 12px;
+}
+
+.accordion_panel p {
+    padding-top: 15px;
+}
+
+.acord-dep .accordion_container {
+    margin: 0;
+}
+
+.dep_container {
+    background-color: #1a1a1a;
+    width: 100%;
+    padding: 60px;
+    color: #ffffff;
+}
+
+.dep_container .accordion_panel {
+    background: #1a1a1ab0;
+}
+
+.dep_container li {
+    list-style: decimal;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.dep_container .titulo {
+    margin-bottom: 40px;
+}
+
+.accordion-orientacion {
+    padding-right: 50px;
+}
+
+
+/*********************************
+Tabla
+*********************************/
+
+.contenedor_tabla {
+    background-color: #1a1a1a;
+    width: 100%;
+    padding: 0;
+    color: #ffffff;
+}
+
+.contenedor_tabla h1 {
+    margin: 40px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.tabla_precios {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: none;
+    color: #ffffff;
+}
+
+.tabla_precios th,
+.tabla_precios td {
+    padding: 23px;
+    border: 2px solid #ffb606;
+    font-size: 16px;
+}
+
+th.borde-especial,
+td.borde-especial {
+    border-right: none;
+    border-left: none;
+}
+
+.fila-1 th,
+.fila-final td {
+    border-top: none;
+    border-bottom: none;
+}
+
+.page_section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+/*********************************
+Carreras
+*********************************/
+
+.img-carrera-r img {
+    width: 100%;
+}
+
+.carreras {
+    width: 100%;
+    padding-bottom: 0;
+    margin: auto;
+}
+
+.carreras .imagen-carrera img {
+    width: 100%;
+}
+
+.imagen-carrera {
+    padding: 0;
+}
+
+.carreras .botones-B {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/*********************************
+8.5 Milestones
+*********************************/
+
+.milestones {
+    width: 100%;
+}
+
+.milestones_background {
+    position: absolute;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.milestone {
+    width: 100%;
+}
+
+.milestone_icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+}
+
+.milestone_icon img {
+    width: 100%;
+}
+
+.milestone_counter {
+    font-size: 70px;
+    font-weight: 500;
+    color: #ffb606;
+    line-height: 1;
+    margin-top: 41px;
+}
+
+.milestone_text {
+    font-size: 22px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-top: 3px;
+}
+
+
+/*********************************
+BTP Informatica
+*********************************/
+
+.BTP-info {
+    color: #FFFFFF;
+    padding: 30px;
+    background-color: #06428f;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.BTP-info .row {
+    margin: 0;
+}
+
+.BTP-info .descripcion p {
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.BTP-info h1,
+.BTP-info h2,
+.BTP-info h3 {
+    width: 100%;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.BTP-info .titulo {
+    padding-left: 15px;
+}
+
+.BTP-info .boton-container {
+    margin-right: 20px;
+}
+
+.BTP-info .botones {
+    display: flex;
+    margin: auto;
+    margin-left: 0;
+}
+
+.BTP-info .botones-B h3 {
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.BTP-info .botones-B h3:hover {
+    padding: 17px;
+    border: 3px solid #adadad;
+    transition: all 100ms ease;
+}
+
+#btp-informatica .imagen-carrera {
+    background-image: url(../images/Carrera-info.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/*********************************
+BTP Contaduria
+*********************************/
+
+.BTP-con {
+    color: #FFFFFF;
+    padding: 30px;
+    background-color: #b80000;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.BTP-con .row {
+    margin: 0;
+}
+
+.BTP-con .descripcion p {
+    text-align: right;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.BTP-con h1,
+.BTP-con h2,
+.BTP-con h3 {
+    width: 100%;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+.BTP-con .titulo {
+    padding-right: 15px;
+}
+
+.BTP-con ul {
+    text-align: right;
+}
+
+.BTP-con .boton-container {
+    margin-left: 20px;
+}
+
+.BTP-con .botones {
+    display: flex;
+    margin: auto;
+    margin-right: 0;
+}
+
+.BTP-con .botones-B h3 {
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.BTP-con .botones-B h3:hover {
+    padding: 17px;
+    border: 3px solid #adadad;
+    transition: all 100ms ease;
+}
+
+#btp-contaduria .imagen-carrera {
+    background-image: url(../images/BTP-conta.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/*********************************
+BTP Humanidades
+*********************************/
+
+.humanidades {
+    color: #FFFFFF;
+    padding: 30px;
+    background-color: #179b00;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.humanidades .row {
+    margin: 0;
+}
+
+.humanidades .descripcion p {
+    text-align: right;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.humanidades h1,
+.humanidades h2,
+.humanidades h3 {
+    width: 100%;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+.humanidades .titulo {
+    padding-right: 15px;
+}
+
+.humanidades ul {
+    text-align: right;
+}
+
+.humanidades .boton-container {
+    margin-left: 20px;
+}
+
+.humanidades .botones {
+    display: flex;
+    margin: auto;
+    margin-right: 0;
+}
+
+.humanidades .botones-B h3 {
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.humanidades .botones-B h3:hover {
+    padding: 17px;
+    border: 3px solid #adadad;
+    transition: all 100ms ease;
+}
+
+#humanidades .imagen-carrera {
+    background-image: url(../images/Carrera-Huma.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/*********************************
+Area bilingue
+*********************************/
+
+
+/*********************************
+8. Buttons
+*********************************/
+
+.button {
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button a {
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.button_1 {
+    width: 202px;
+    height: 48px;
+}
+
+
+/*********************************
+9. Popular
+*********************************/
+
+.course_boxes {
+    margin-top: 68px;
+}
+
+.course_box {
+    margin-bottom: 108px;
+}
+
+.course_box:nth-last-child(-n+3) {
+    margin-bottom: 0px;
+}
+
+.card {
+    display: block;
+    background: #f8f9fb;
+    border: none;
+}
+
+.card-img-top {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.card-body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-title {
+    margin-top: 55px;
+}
+
+.card-title a {
+    font-size: 22px;
+    font-weight: 500;
+    color: #1a1a1a;
+    line-height: 1.2;
+}
+
+.card-title a:hover {
+    color: #a5a5a5;
+}
+
+.card-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #a5a5a5;
+    margin-top: -12px;
+}
+
+.price_box {
+    width: 100%;
+    height: 67px;
+    background: #eaebec;
+    margin-top: 41px;
+    padding-left: 35px;
+}
+
+.course_author_image {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.course_author_name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a1a1a;
+    padding-left: 20px;
+    margin-top: 7px;
+}
+
+.course_author_name span {
+    color: #a5a5a5;
+}
+
+.course_price {
+    width: 67px;
+    height: 67px;
+    background: #ffb606;
+    margin-left: auto;
+}
+
+.course_price span {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+
+/*********************************
+10. Footer
+*********************************/
+
+.footer {
+    width: 100%;
+    padding-top: 86px;
+    background: #1a1a1a;
+}
+
+.footer .section_title h1 {
+    color: #FFFFFF;
+}
+
+
+/*********************************
+ Footer borde
+*********************************/
+
+.newsletter-normal {
+    border-bottom: solid 2px #4d4e4e;
+}
+
+
+/*********************************
+10.2 Footer Content
+*********************************/
+
+.footer_content {
+    padding-top: 80px;
+    padding-bottom: 83px;
+    border-bottom: solid 2px #4d4e4e;
+}
+
+.footer_content .logo_container {
+    padding-left: 0px;
+}
+
+.footer_content .logo span {
+    color: #FFFFFF;
+}
+
+.footer_about_text {
+    margin-top: 24px;
+    margin-bottom: 0px;
+    padding-right: 20px;
+}
+
+.footer_column_title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding-top: 15px;
+}
+
+.footer_column_content {
+    margin-top: 32px;
+}
+
+.footer_list_item {
+    margin-bottom: 11px;
+}
+
+.footer_list_item a {
+    font-size: 14px;
+    color: #a5a5a5;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.footer_list_item a:hover {
+    color: #ffb606;
+}
+
+.footer_contact_item {
+    font-size: 14px;
+    font-weight: 400;
+    color: #a5a5a5;
+    margin-bottom: 22px;
+}
+
+.footer_contact_item:last-child {
+    margin-bottom: 0px;
+}
+
+.footer_contact_icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.footer_contact_icon img {
+    width: 100%;
+}
+
+
+/*********************************
+10.3 Footer Copyright
+*********************************/
+
+.footer_bar {
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.footer_social .menu_social_item a i {
+    color: #FFFFFF;
+}
+
+.footer_social .menu_social_item a i:hover {
+    color: #ffb606;
+}
+
+.footer_social .menu_social_item:last-child {
+    margin-right: 0px;
+}
+
+
+/* estilos de botón para regresar arriba */
+
+.simplescrollup__button {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    transition: 1s all;
+    z-index: 10000;
+}
+
+.simplescrollup__button--show {
+    transform: translateX(0);
+}
+
+.simplescrollup__button--hide {
+    transform: translateX(100px);
+}
+
+.mostrar-responsive {
+    display: none;
+}

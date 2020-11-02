@@ -1,0 +1,24 @@
+    /************
+5. 1024px
+************/
+    
+    @media only screen and (max-width: 1024px) {
+        .main_nav_item {
+            margin-right: 10px;
+        }
+        .main_nav_item:last-child {
+            margin-right: 0px;
+        }
+        .main_nav_container {
+            padding-right: 40px;
+        }
+        .logo img {
+            width: 80%;
+        }
+    }
+    
+    @media only screen and (max-width: 575px) {
+        .logo img {
+            width: 120px;
+        }
+    }
