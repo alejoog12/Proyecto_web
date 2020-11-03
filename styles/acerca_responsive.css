@@ -439,8 +439,14 @@
         font-size: 30pt;
     }
     p {
-        font-size: 18px;
+        font-size: 16px !important;
         line-height: 1.7;
+    }
+    .seccion-historia .contenido-texto {
+        padding: 0px 30px;
+    }
+    .texto-diapositiva {
+        padding: 0;
     }
 }
 
@@ -530,5 +536,31 @@
     .quienes_somos {
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .simplescrollup__button--show {
+        transform: translateX(300px);
+    }
+    .simplescrollup__button--hide {
+        transform: translateX(400px);
+    }
+    .boton_arriba {
+        width: 14%;
+    }
+}
+
+
+/************
+16. 320px
+************/
+
+@media only screen and (max-width: 320px) {
+    .simplescrollup__button--show {
+        transform: translateX(250px);
+    }
+    .simplescrollup__button--hide {
+        transform: translateX(400px);
+    }
+    .boton_arriba {
+        width: 17%;
     }
 }
