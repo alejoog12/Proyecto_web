@@ -69,8 +69,8 @@ ul {
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    line-height: 2.29;
+    font-size: 15px;
+    line-height: 2;
     font-weight: 400;
     color: #a5a5a5;
     -webkit-font-smoothing: antialiased;
@@ -965,6 +965,10 @@ section {
     margin-bottom: 3%;
 }
 
+.imagen-footer {
+    width: 90%;
+}
+
 
 /* estilos de botón para regresar arriba */
 
@@ -982,4 +986,10 @@ section {
 
 .simplescrollup__button--hide {
     transform: translateX(100px);
+}
+
+@media only screen and (max-width: 991px) {
+    .imagen-footer {
+        width: 250px;
+    }
 }

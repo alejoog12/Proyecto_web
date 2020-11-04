@@ -567,6 +567,16 @@
     .video-zoom {
         height: 150px;
     }
+    .simplescrollup__button--show {
+        transform: translateX(300px);
+    }
+
+    .simplescrollup__button--hide {
+        transform: translateX(400px);
+    }
+    .boton_arriba {
+        width: 14%;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -589,5 +599,14 @@
     }
     .slide-video .carousel-inner .carousel-item {
         padding-top: 30px;
+    }
+    .simplescrollup__button--show {
+        transform: translateX(250px);
+    }
+    .simplescrollup__button--hide {
+        transform: translateX(400px);
+    }
+    .boton_arriba {
+        width: 17%;
     }
 }

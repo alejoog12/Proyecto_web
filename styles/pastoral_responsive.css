@@ -471,6 +471,28 @@
 ************/
 
 @media only screen and (max-width: 479px) {
+    .act-pastoral .texto ul {
+        padding-left: 24px;
+    }
+    li {
+        font-size: 14px !important;
+    }
+    h1 {
+        font-size: 30px !important;
+    }
+    p {
+        font-size: 15.5px !important;
+        line-height: 1.7 !important;
+    }
+    .palabras-capellan .nombre-c {
+        margin-top: 0;
+    }
+    .palabras-capellan .nombre-c h1 {
+        font-size: 25px !important;
+    }
+    .palabras-capellan .nombre-c h3 {
+        font-size: 14px;
+    }
     .header {
         height: 60px;
         top: 15px;
@@ -510,6 +532,12 @@
     .pastoral-educativa .imagen img.mostrar-responsive {
         display: none;
     }
+    .columna-palabras {
+        padding: 0;
+    }
+    .texto {
+        padding: 40px 24px !important;
+    }
 }
 
 
@@ -518,3 +546,41 @@
 ************/
 
 @media only screen and (max-width: 400px) {}
+
+
+/************
+15. 375px
+************/
+
+@media only screen and (max-width: 375px) {
+    p {
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+    }
+    .simplescrollup__button--show {
+        transform: translateX(300px);
+    }
+    .simplescrollup__button--hide {
+        transform: translateX(400px);
+    }
+    .boton_arriba {
+        width: 14%;
+    }
+}
+
+
+/************
+16. 320px
+************/
+
+@media only screen and (max-width: 320px) {
+    .simplescrollup__button--show {
+        transform: translateX(250px);
+    }
+    .simplescrollup__button--hide {
+        transform: translateX(400px);
+    }
+    .boton_arriba {
+        width: 17%;
+    }
+}

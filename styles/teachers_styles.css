@@ -493,9 +493,13 @@ COLOR PALETTE
 }
 
 .simplescrollup__button--show {
-    transform: translateX(0);
+    transform: translateX(350px);
 }
 
 .simplescrollup__button--hide {
-    transform: translateX(100px);
+    transform: translateX(500px);
+}
+
+.boton_arriba {
+    width: 13%;
 }

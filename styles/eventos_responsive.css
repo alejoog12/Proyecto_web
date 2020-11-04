@@ -79,10 +79,6 @@
     .header_side {
         display: none !important;
     }
-    .home_content h1 {
-        line-height: 0.8;
-        font-size: 50px;
-    }
     .main_nav_container {
         padding-right: 53px;
     }
@@ -96,18 +92,6 @@
     .search_content {
         width: 442px;
     }
-    .imagen-quienes {
-        display: none;
-    }
-    .quienes-somos {
-        width: 100%;
-    }
-    .texto-diapositiva {
-        margin: auto;
-    }
-    .seccion-historia .texto-diapositiva:last-child {
-        margin: 0;
-    }
 }
 
 
@@ -118,25 +102,6 @@
 @media only screen and (max-width: 1199px) {
     .hero_box {
         padding-left: 20px;
-    }
-    .imagen-quienes-d {
-        display: contents;
-    }
-    .quienes_somos-img {
-        width: 100%;
-    }
-    .quienes_somos-img img {
-        width: 60%;
-        margin: auto;
-    }
-    .quienes_somos-img img.derecha {
-        margin-right: 0;
-    }
-    .quienes_somos-img img.izquierda {
-        margin-left: 0;
-    }
-    .imagen-vicentino {
-        width: 100%;
     }
 }
 
@@ -162,8 +127,8 @@
     .main_nav_container {
         padding-right: 40px;
     }
-    .home_content {
-        padding-bottom: 1px;
+    .logo img {
+        width: 80%;
     }
 }
 
@@ -246,12 +211,6 @@
     .footer_col {
         text-align: center;
     }
-    .seccion-historia .contenido-texto:first-child {
-        padding-bottom: 0 !important;
-    }
-    .seccion-historia .contenido-texto:last-child {
-        padding-top: 0 !important;
-    }
 }
 
 
@@ -259,34 +218,14 @@
 7. 959px
 ************/
 
-@media only screen and (max-width: 959px) {
-    .home_content h1 {
-        line-height: 0.8;
-        font-size: 45px;
-    }
-    .seccion-historia .contenido-titulo {
-        text-align: center;
-        padding: 20px;
-        padding-top: 50px;
-    }
-}
+@media only screen and (max-width: 959px) {}
 
 
 /************
 8. 880px
 ************/
 
-@media only screen and (max-width: 880px) {
-    .home_content h1 {
-        line-height: 0.4;
-        font-size: 50px;
-    }
-    .caja-img-fundador {
-        margin: auto;
-        margin-bottom: 20px;
-        float: none;
-    }
-}
+@media only screen and (max-width: 880px) {}
 
 
 /************
@@ -294,15 +233,8 @@
 ************/
 
 @media only screen and (max-width: 768px) {
-    .imagenes-historia {
+    .perico-img {
         width: 100%;
-        margin-bottom: 20px;
-    }
-    .fondo-diapositiva {
-        background-position: 50%;
-    }
-    .home_content h1 {
-        font-size: 50px;
     }
 }
 
@@ -332,7 +264,10 @@
 
 @media only screen and (max-width: 575px) {
     h1 {
-        font-size: 30px;
+        font-size: 24px;
+    }
+    p {
+        font-size: 13px;
     }
     .header {
         height: 74px;
@@ -372,11 +307,10 @@
         height: 372px;
     }
     .home_content {
-        padding-top: 15px;
-        padding-bottom: 10px;
+        padding-top: 17px;
+        padding-bottom: 11px;
         padding-left: 22px;
         padding-right: 24px;
-        line-height: 0.2;
     }
     .home_content h1 {
         font-size: 30px;
@@ -439,32 +373,6 @@
     .footer_copyright span {
         font-size: 13px;
     }
-    .home_content h1 {
-        line-height: 0.4;
-        font-size: 50px;
-    }
-    .seccion-historia .contenido-titulo h1 {
-        font-size: 30pt;
-    }
-    .quienes_somos-titulo h1 {
-        font-size: 30pt;
-    }
-    p {
-        font-size: 15.5px !important;
-        line-height: 1.7;
-    }
-    .seccion-historia .contenido-texto {
-        padding: 0px 30px;
-    }
-    .texto-diapositiva {
-        padding: 0;
-    }
-    .caja-img-fundador {
-        width: 50%;
-    }
-    .caja-img-fundador p.cita {
-        font-size: 8px;
-    }
 }
 
 
@@ -520,23 +428,6 @@
     .hero_box_link {
         font-size: 10px;
     }
-    .imagen-quienes-d {
-        display: none;
-    }
-    .acerca .diapositiva:first-child .imagen-quienes-d {
-        display: contents;
-    }
-    .imagen-quienes-d img {
-        width: 98%;
-    }
-    .home_content h1 {
-        line-height: 0.4;
-        font-size: 40px;
-    }
-    .contenido-texto,
-    .quienes_somos {
-        padding: 20px 24px !important;
-    }
 }
 
 
@@ -544,32 +435,24 @@
 14. 400px
 ************/
 
-@media only screen and (max-width: 400px) {
-    .home_content h1 {
-        line-height: 0.4;
-        font-size: 30px;
-    }
-}
+@media only screen and (max-width: 400px) {}
+
+/************
+15. 375px
+************/
 
 @media only screen and (max-width: 375px) {
     .simplescrollup__button--show {
         transform: translateX(300px);
     }
+
     .simplescrollup__button--hide {
         transform: translateX(400px);
     }
     .boton_arriba {
         width: 14%;
     }
-    p {
-        font-size: 15px !important;
-        line-height: 1.5;
-    }
-    h1 {
-        font-size: 32px !important;
-    }
 }
-
 
 /************
 16. 320px
@@ -579,6 +462,7 @@
     .simplescrollup__button--show {
         transform: translateX(250px);
     }
+
     .simplescrollup__button--hide {
         transform: translateX(400px);
     }

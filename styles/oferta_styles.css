@@ -353,14 +353,14 @@ Tabla
 
 th.borde-especial,
 td.borde-especial {
-    border-right: none;
-    border-left: none;
+    border-right: none !important;
+    border-left: none !important;
 }
 
 .fila-1 th,
 .fila-final td {
-    border-top: none;
-    border-bottom: none;
+    border-top: none !important;
+    border-bottom: none !important;
 }
 
 .page_section {
@@ -409,7 +409,7 @@ Carreras
 
 .milestones_background {
     position: absolute;
-    opacity: 0.2;
+    opacity: 0.1;
     top: 0;
     left: 0;
     width: 100%;
@@ -417,7 +417,6 @@ Carreras
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
 }
 
 .milestone {

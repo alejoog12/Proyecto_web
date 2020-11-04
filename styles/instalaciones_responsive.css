@@ -264,10 +264,11 @@
 
 @media only screen and (max-width: 575px) {
     h1 {
-        font-size: 24px;
+        font-size: 30px !important;
     }
     p {
-        font-size: 13px;
+        font-size: 15.5px !important;
+        line-height: 1.7 !important;
     }
     .header {
         height: 74px;
@@ -378,8 +379,8 @@
     }
     .zoom {
         transition: transform .5s;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .zoom:hover {
         transform: scale(0.9);
@@ -390,6 +391,9 @@
     }
     .capturas-instalaciones .titulo h1 {
         margin-bottom: 0;
+    }
+    .fila {
+        margin-bottom: 0 !important;
     }
 }
 
@@ -454,3 +458,37 @@
 ************/
 
 @media only screen and (max-width: 400px) {}
+
+
+/************
+15. 375px
+************/
+
+@media only screen and (max-width: 375px) {
+    .simplescrollup__button--show {
+        transform: translateX(300px);
+    }
+    .simplescrollup__button--hide {
+        transform: translateX(400px);
+    }
+    .boton_arriba {
+        width: 14%;
+    }
+}
+
+
+/************
+16. 320px
+************/
+
+@media only screen and (max-width: 320px) {
+    .simplescrollup__button--show {
+        transform: translateX(250px);
+    }
+    .simplescrollup__button--hide {
+        transform: translateX(400px);
+    }
+    .boton_arriba {
+        width: 17%;
+    }
+}

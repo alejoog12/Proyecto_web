@@ -360,9 +360,6 @@
 ************/
 
 @media only screen and (max-width: 575px) {
-    h1 {
-        font-size: 24px;
-    }
     .header {
         height: 74px;
     }
@@ -481,12 +478,11 @@
         margin: 0;
     }
     p {
-        font-size: 15px;
+        font-size: 15.5px !important;
         line-height: 1.7 !important;
-        text-align: justify !important;
     }
     h1 {
-        font-size: 30px;
+        font-size: 30px !important;
     }
     .titulo-bachiller {
         padding: 40px 0px;
@@ -529,6 +525,9 @@
     .BTP-con .boton-container {
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .accordion_container {
+        margin: 30px auto;
     }
 }
 
@@ -590,7 +589,7 @@
         font-size: 40px;
     }
     .dep_container {
-        padding: 40px 30px;
+        padding: 40px 24px;
     }
     .dep_container h3 {
         font-size: 20px;
@@ -601,6 +600,24 @@
     }
     .dep_container p {
         font-size: 14px;
+    }
+    .BTP-info,
+    .BTP-con,
+    .humanidades {
+        padding: 30px 24px;
+    }
+    .area-bilingue .texto-bilingue,
+    .area-bilingue .titulo-bilingue {
+        padding: 30px 24px;
+    }
+    .contenedor_tabla {
+        padding: normal 24px;
+    }
+    .tabla_precios th,
+    .tabla_precios td {
+        border-width: 1px;
+        width: 120px;
+        padding: 20px 10px;
     }
 }
 
@@ -635,6 +652,10 @@
     .boton_arriba {
         width: 14%;
     }
+    p {
+        font-size: 15px !important;
+        line-height: 1.7;
+    }
 }
 
 
@@ -643,15 +664,6 @@
 ************/
 
 @media only screen and (max-width: 320px) {
-    .accordion {
-        width: 250px;
-    }
-    .elements_accordions {
-        padding-left: 20px;
-    }
-    .accordion_container {
-        margin-left: 0%;
-    }
     .dep_container .accordion {
         height: 80px;
         width: 260px;
@@ -667,5 +679,9 @@
     }
     .boton_arriba {
         width: 17%;
+    }
+    .tabla_precios th,
+    .tabla_precios td {
+        width: 90px;
     }
 }
