@@ -236,7 +236,11 @@
 9. 768px
 ************/
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .fondo::before {
+        font-size: 50px;
+    }
+}
 
 
 /************
@@ -377,13 +381,9 @@
     .instalaciones-container .row {
         display: block;
     }
-    .zoom {
-        transition: transform .5s;
+    .caja-img {
         margin-top: 10px;
         margin-bottom: 10px;
-    }
-    .zoom:hover {
-        transform: scale(0.9);
     }
     .capturas-instalaciones .titulo {
         padding-bottom: 40px;
@@ -394,6 +394,23 @@
     }
     .fila {
         margin-bottom: 0 !important;
+    }
+    .imagen-mostrada {
+        margin: auto auto;
+        height: auto;
+        width: 100%;
+    }
+    #content {
+        height: auto;
+        width: 80%;
+    }
+    #boton-cerrar {
+        font-size: 24px;
+        width: 35px;
+        height: 35px;
+    }
+    .flecha-light {
+        font-size: 45px;
     }
 }
 
@@ -473,6 +490,10 @@
     }
     .boton_arriba {
         width: 14%;
+    }
+    #boton-cerrar {
+        top: 10px;
+        right: 10px;
     }
 }
 

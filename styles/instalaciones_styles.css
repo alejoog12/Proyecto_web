@@ -34,6 +34,7 @@ COLOR PALETTE
 
 ******************************/
 
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 /*********************************
 instalaciones
@@ -52,14 +53,6 @@ instalaciones
 .instalaciones-container .row {
     width: 100%;
     margin: auto;
-}
-
-.zoom {
-    transition: transform .5s;
-}
-
-.zoom:hover {
-    transform: scale(1.1);
 }
 
 .instalaciones-container .texto {
@@ -133,6 +126,141 @@ instalaciones
     width: 100%;
     margin: auto;
     margin-bottom: 50px;
+}
+
+.fondo {
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imagen-lightbox {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    width: 100%;
+    cursor: pointer;
+}
+
+.fondo:hover .imagen-lightbox {
+    transform: scale(1.1);
+    opacity: 0.3;
+    filter: sepia(100%) blur(2px);
+}
+
+.fondo::before {
+    content: "\f06e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.fondo:hover:before {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 26, 26, 0.596);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#lightbox p {
+    text-align: right;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.contenido-lightbox {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-mostrada {
+    box-shadow: 0 0 25px #111;
+    -webkit-box-shadow: 0 0 25px #111;
+    -moz-box-shadow: 0 0 25px #111;
+    height: 100%;
+}
+
+#content {
+    height: 80%;
+}
+
+.flecha-light {
+    position: static;
+    color: #f8f9fb;
+    font-size: 90px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.flecha-light:hover {
+    transform: scale(1.2);
+}
+
+#flecha-izquierda {
+    margin-right: 15px;
+}
+
+#flecha-derecha {
+    margin-left: 15px;
+}
+
+#boton-cerrar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 38px;
+    background-color: #f8f9fb;
+    color: #1a1a1a;
+    padding: 0px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#boton-cerrar:hover {
+    transform: scale(1.2);
+    color: #FFFFFF;
+    background-color: #ffb606;
 }
 
 
